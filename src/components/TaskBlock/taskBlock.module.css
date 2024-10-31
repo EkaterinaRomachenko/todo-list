@@ -1,0 +1,64 @@
+.taskBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: grey;
+  height: 100%;
+  margin: 0 40px;
+  padding: 60px 0;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.taskBlock__Sortlist {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}
+
+
+.taskBlock__Tasklist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+@media screen and (max-width: 890px) {
+  .taskBlock__Tasklist {
+    width: 90%;
+  }
+
+  .taskBlock__Sortlist {
+    width: 90%;
+  }
+
+  .container {
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .taskBlock {
+    padding: 15px 20px;
+    margin: 0 20px;
+  }
+}

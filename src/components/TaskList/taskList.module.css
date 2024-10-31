@@ -1,0 +1,41 @@
+.taskList {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 0px 10px 0px 10px;
+  padding: 20px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.taskList__text {
+  font-size: 18px;
+  color: white;
+  overflow-wrap: anywhere;
+}
+
+.taskList__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.taskList__icon {
+  color: rgb(66, 63, 63);
+}
+
+.taskList__icon:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 550px) {
+  .taskList {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

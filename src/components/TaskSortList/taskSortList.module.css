@@ -1,0 +1,28 @@
+.taskBlock__item {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  color: #ddd;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.count {
+  margin-left: 5px;
+}
+
+.active {
+  color: white;
+}
+
+.active::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid rgb(0, 140, 255);
+}
+
+
